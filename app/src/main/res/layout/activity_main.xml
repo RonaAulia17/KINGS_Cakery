@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/logo" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="20dp"
+            android:text="Selamat Datang di"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KING'S Cakerie"
+            android:textColor="@color/emas"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView" />
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nama"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/textView2"/>
+        <EditText
+            android:id="@+id/telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="No Telp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/nama"/>
+        <EditText
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Alamat Pengiriman"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/telp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Daftar Menu"
+            android:textAlignment="center"
+            android:textColor="@color/emas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/gambar_cheesecake"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cchese" />
+
+        <CheckBox
+            android:id="@+id/checkBox_1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tandai"
+            android:layout_below="@+id/gambar_cheesecake"/>
+
+        <TextView
+            android:id="@+id/tulisancheesecake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHEESE CAKE"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/checkBox_1"/>
+
+        <TextView
+            android:id="@+id/dsec1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Dessert Keju yang bertekstur lembut dan nikmat"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/gambar_bananacake"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView6"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bananacake" />
+
+        <CheckBox
+            android:id="@+id/checkBox_2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tandai" />
+        <TextView
+            android:id="@+id/tulisanbananacake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BANANA CAKE"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/checkBox_1"/>
+
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Kue Manis dengan adonan pisang tumbuk dan kacang panggan"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/desc2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/trms" />
+
+        <CheckBox
+            android:id="@+id/checkBox_3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tandai" />
+        <TextView
+            android:id="@+id/tulisantiramisucake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIRAMISU CAKE"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/checkBox_3"/>
+
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Dessert Italia dengan keju mascarpone dan sirup kopi"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/gambar_hotchocolate"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/desc3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/hotc" />
+
+        <CheckBox
+            android:id="@+id/checkBox_4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tandai" />
+        <TextView
+            android:id="@+id/tulisanhotchocolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOT CHOCOLATE"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/checkBox_4"/>
+
+        <TextView
+            android:id="@+id/desc4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Minuman cokelat lezat dan nikmat"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/gambar_cofeelatte"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/desc4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/clatte" />
+
+        <CheckBox
+            android:id="@+id/checkBox_5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tandai" />
+        <TextView
+            android:id="@+id/tulisancofeelatte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COFEE LATTE"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/checkBox_5"/>
+
+        <TextView
+            android:id="@+id/desc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="Minuman perpaduan kopi espresso dan susu"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/tombol_simpan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="SIMPAN PESANAN"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/emas" />
+
+        <Button
+            android:id="@+id/tombol_ubah"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="UBAH PESANAN"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/teal_200" />
+
+        <Button
+            android:id="@+id/tombol_hapus"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="HAPUS PESANAN"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/design_default_color_error" />
+
+        <Button
+            android:id="@+id/tombol_lihat"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="LIHAT PESANAN"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/cofee" />
+
+        <Button
+            android:id="@+id/tombol_pesan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="PESAN (Whatsapp)"
+            android:textColor="@color/black"
+            app:backgroundTint="#16D600" />
+
+    </LinearLayout>
+
+
+</ScrollView>
